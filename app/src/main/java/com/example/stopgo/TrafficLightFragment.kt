@@ -93,15 +93,6 @@ class TrafficLightFragment : Fragment() {
         yellowLightInput.setText((yellowLightDuration / 1000).toString())
         greenLightInput.setText((greenLightDuration / 1000).toString())
 
-        val redLightLabel = view.findViewById<TextView>(R.id.redLightLabel)
-        redLightLabel.typeface = poppinsRegular
-
-        val yellowLightLabel = view.findViewById<TextView>(R.id.yellowLightLabel)
-        yellowLightLabel.typeface = poppinsRegular
-
-        val greenLightLabel = view.findViewById<TextView>(R.id.greenLightLabel)
-        greenLightLabel.typeface = poppinsRegular
-
         builder.setView(view)
 
         builder.setPositiveButton("OK") { _, _ ->
@@ -178,14 +169,13 @@ class TrafficLightFragment : Fragment() {
                 isYellowActivated = true
             }
         } else {
-
             if (isYellowActivated) {
                 stopYellowBlinking()
                 isYellowActivated = false
-                if (!isTrafficCycleStarted) {
-                    startTrafficLightCycle()
-                    isTrafficCycleStarted = true
-                }
+            }
+            if (!isTrafficCycleStarted) {
+                startTrafficLightCycle()
+                isTrafficCycleStarted = true
             }
         }
 
