@@ -1,0 +1,124 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#22272B"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/settings_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/baseline_settings_24" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/imageFrameLayout"
+        android:layout_width="406dp"
+        android:layout_height="512dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/traffic_light_image"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/stopImage"
+            android:layout_width="205dp"
+            android:layout_height="161dp"
+            android:layout_gravity="center"
+            android:src="@drawable/stop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/warningImage"
+            android:layout_width="205dp"
+            android:layout_height="161dp"
+            android:layout_gravity="center"
+            android:src="@drawable/warning"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/goImage"
+            android:layout_width="205dp"
+            android:layout_height="161dp"
+            android:layout_gravity="center"
+            android:src="@drawable/go"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/traffic_light_image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/traffic_lights_13797004"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <View
+        android:id="@+id/redLight"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:alpha="0"
+        android:background="@drawable/ellipse_1__3_"
+        app:layout_constraintBottom_toTopOf="@+id/greenLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/traffic_light_image"
+        app:layout_constraintVertical_bias="0.754"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/yellowLight"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="36dp"
+        android:alpha="0"
+        android:background="@drawable/ellipse_1__2_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/traffic_light_image"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/greenLight"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="116dp"
+        android:alpha="0"
+        android:background="@drawable/ellipse_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/traffic_light_image"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

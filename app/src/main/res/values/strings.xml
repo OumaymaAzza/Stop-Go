@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stop&amp;Go</string>
+    <string name="feu_teint">Feu éteint</string>
+    <string name="effortlessly_switch_between_red_yellow_and_green_lights">Effortlessly switch between red, yellow, and green lights.</string>
+    <string name="enter_seconds">Enter seconds</string>
+    <string name="yellow_light_duration_in_seconds">Yellow Light Duration (in seconds)</string>
+</resources>

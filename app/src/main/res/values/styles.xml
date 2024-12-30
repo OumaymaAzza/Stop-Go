@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/dialog_background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/CustomDialogButton</item>
+    </style>
+
+
+    <style name="CustomDialogButton">
+        <item name="android:background">@color/button_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+    <color name="dialog_background">#22272B</color>
+    <color name="text_primary">#12EE3A</color>
+    <color name="text_secondary">#FFFFFF</color>
+    <color name="button_background">#12EE3A</color>
+</resources>
